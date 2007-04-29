@@ -1,6 +1,6 @@
 %define real_name MP3-Info
 %define name perl-%real_name
-%define version 1.20
+%define version 1.22
 %define release %mkrel 1
 
 Summary: Perl module to manipulate / fetch info from MP3 audio files
