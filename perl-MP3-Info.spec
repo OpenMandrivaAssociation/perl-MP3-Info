@@ -13,7 +13,6 @@ URL: http://search.cpan.org/dist/%{real_name}/
 Source: ftp://ftp.pasteur.fr/pub/computing/CPAN/modules/by-module/MPEG/%{real_name}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildArch: noarch
-Buildroot: %{_tmppath}/%{name}-root
 Obsoletes: perl-MPEG-MP3Info
 Provides: perl-MPEG-MP3Info = %{version}
 
