@@ -9,7 +9,7 @@ Summary:    Perl module to manipulate / fetch info from MP3 audio files
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source:     http://www.cpan.org/modules/by-module/MP3/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/MP3/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildArch: noarch
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
