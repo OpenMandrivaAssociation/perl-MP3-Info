@@ -1,24 +1,24 @@
-%define module MP3-Info
-%define name perl-%module
-%define version 1.23
-%define release %mkrel 2
+%define upstream_name    MP3-Info
+%define upstream_version 1.24
 
-Name:       %{name}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    Perl module to manipulate / fetch info from MP3 audio files
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/MP3/%{module}-%{version}.tar.gz
-BuildArch:  noarch
-Buildroot:  %{_tmppath}/%{name}-%{version}
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source:     http://www.cpan.org/modules/by-module/MP3/%{upstream_name}-%{upstream_version}.tar.gz
+
+BuildArch: noarch
+Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Manipulate / fetch info from MP3 audio files : winamp genres, mp3tag, mp3info.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
