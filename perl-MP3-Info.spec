@@ -27,7 +27,7 @@ Manipulate / fetch info from MP3 audio files :	winamp genres, mp3tag, mp3info.
 %makeinstall_std
 
 %files
-%doc Changes eg META.yml MYMETA.yml
+%doc Changes eg META.yml
 %{perl_vendorlib}/MP3
 %{_mandir}/man3/*
 
