@@ -23,9 +23,6 @@ Manipulate / fetch info from MP3 audio files :	winamp genres, mp3tag, mp3info.
 %__perl Makefile.PL INSTALLDIRS=vendor
 %make OPTIMIZE="%{optflags}"
 
-%check
-%make test
-
 %install
 %makeinstall_std
 
