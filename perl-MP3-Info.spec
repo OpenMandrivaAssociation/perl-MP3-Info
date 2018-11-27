@@ -1,10 +1,10 @@
 %define modname	MP3-Info
-%define modver	1.24
+%define modver	1.26
 
 Summary:	Perl module to manipulate / fetch info from MP3 audio files
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	16
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -23,14 +23,11 @@ Manipulate / fetch info from MP3 audio files :	winamp genres, mp3tag, mp3info.
 %__perl Makefile.PL INSTALLDIRS=vendor
 %make OPTIMIZE="%{optflags}"
 
-%check
-%make test
-
 %install
 %makeinstall_std
 
 %files
-%doc README Changes eg
+%doc Changes eg META.yml
 %{perl_vendorlib}/MP3
 %{_mandir}/man3/*
 
