@@ -3,11 +3,11 @@
 
 Summary:	Perl module to manipulate / fetch info from MP3 audio files
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	2
+Version:	%{modver}
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
+Url:		https://metacpan.org/dist/MP3-Info
 Source0:	http://www.cpan.org/modules/by-module/MP3/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
